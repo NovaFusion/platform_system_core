@@ -171,6 +171,7 @@ void help()
         "\n"
         "scripting:\n"
         "  adb wait-for-device          - block until device is online\n"
+        "  adb wait-for-recovery        - block until device in recovery is online\n"
         "  adb start-server             - ensure that there is a server running\n"
         "  adb kill-server              - kill the server if it is running\n"
         "  adb get-state                - prints: offline | bootloader | device\n"

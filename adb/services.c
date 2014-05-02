@@ -579,6 +579,9 @@ asocket*  host_service_to_socket(const char*  name, const char *serial)
         } else if (!strncmp(name, "any", strlen("any"))) {
             sinfo->transport = kTransportAny;
             sinfo->state = CS_DEVICE;
+        } else if (!strncmp(name, "recovery", strlen("recovery"))) {
+            sinfo->transport = kTransportUsb;
+            sinfo->state = CS_RECOVERY;
         } else {
             free(sinfo);
             return NULL;
